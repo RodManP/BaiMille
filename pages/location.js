@@ -1,14 +1,11 @@
 import Head from "next/head";
+import MetaHead from "../components/layout/MetaHead"
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Vai Mille Guest House</title>
-        <meta name="description" content="Guest House" />
-        <link rel="icon" href="" />
-      </Head>
+      <MetaHead title="Bai Mille Location" />
 
       <main className={styles.main}>
         <h1>Location</h1>
