@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Vai Mille Guest House</title>
+        <title>Bai Mille Guest House</title>
         <meta name="description" content="Guest House" />
         <link rel="icon" href="" />
       </Head>
