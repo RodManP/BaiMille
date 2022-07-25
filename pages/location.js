@@ -1,17 +1,12 @@
-import Head from "next/head";
-import MetaHead from "../components/layout/MetaHead"
-import styles from "../styles/Home.module.css";
+import Layout from "../components/layout/Layout";
+import styles from "../styles/location.module.css";
 
-export default function Home() {
+export default function Location() {
   return (
-    <div className={styles.container}>
-      <MetaHead title="Bai Mille Location" />
-
-      <main className={styles.main}>
+    <Layout title="Bai Mille Location">
+      
         <h1>Location</h1>
-      </main>
-
-      <footer className={styles.footer}></footer>
-    </div>
+     
+    </Layout>
   );
 }

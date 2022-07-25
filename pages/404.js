@@ -1,18 +1,13 @@
-import Head from "next/head";
-import MetaHead from "../components/layout/MetaHead";
-import styles from "../styles/Home.module.css";
+import Layout from "../components/layout/Layout";
+import styles from "../styles/404.module.css"
 
 export default function NotFound() {
   return (
-    <div className={styles.container}>
-      <MetaHead title="Bai Mille" />
-
+    <Layout title="Not Found">
       <main className={styles.main}>
-        <h1>Page Not Found</h1>
+        <h1>Not Found</h1>
       </main>
-
-      <footer className={styles.footer}></footer>
-    </div>
+    </Layout>
   );
 }
 
