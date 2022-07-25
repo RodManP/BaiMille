@@ -6,12 +6,10 @@ import styles from "../../styles/navbar.module.css";
 export default function navbar() {
   return (
     <nav className={styles.navbar}>
-      <span>
-        <Link href="/">
+      <Link href="/">
         <Image src="/vercel.svg" alt="Icon" width="100px" height="50px" />
       </Link>
-      </span>
-      
+
       <Link href="/">
         <a className={styles.active}>Home</a>
       </Link>
