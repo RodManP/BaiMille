@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import NavItem from "./NavItem";
 import Image from "next/image";
@@ -14,7 +14,6 @@ const MENU_LIST = [
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
-  const [activeIdx, setActiveIdx] = useState(-1);
 
   return (
     <header>
@@ -31,16 +30,15 @@ const Navbar = () => {
         </div>
 
         <div className={`${navActive ? "active" : ""} nav__menu-list`}>
-          {MENU_LIST.map((menu, idx) => {
+          {MENU_LIST.map((menu) => {
             return (
               <div
                 onClick={() => {
-                  // setActiveIdx(idx);
                   setNavActive(false);
                 }}
                 key={menu.text}
               >
-                <NavItem active={activeIdx === idx} {...menu} />
+                <NavItem {...menu} />
               </div>
             );
           })}
