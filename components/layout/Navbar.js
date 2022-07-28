@@ -4,8 +4,6 @@ import NavItem from "./NavItem";
 import Image from "next/image";
 // import styles from "../../styles/navbar.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { GrClose } from "react-icons/gr";
-import { MdClose } from "react-icons/md";
 
 const MENU_LIST = [
   { text: "home", href: "/" },
@@ -16,14 +14,13 @@ const MENU_LIST = [
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
-  const [activeIdx, setActiveIdx] = useState(0);
-
+  const [activeIdx, setActiveIdx] = useState(-1);
 
   return (
     <header>
       <nav className={`nav`}>
         <Link href={"/"}>
-          <a onClick={() =>setActiveIdx(0)}>
+          <a onClick={() => setActiveIdx(0)}>
             <h1 className="logo">Guest House</h1>
           </a>
         </Link>
@@ -33,21 +30,24 @@ const Navbar = () => {
           <div></div>
         </div>
 
-        <div className={`${navActive ? 'active' : ''} nav__menu-list`}>
+        <div className={`${navActive ? "active" : ""} nav__menu-list`}>
           {MENU_LIST.map((menu, idx) => {
             return (
-            <div onClick={() => {
-                setActiveIdx(idx);
-                setNavActive(false);
-              }}
-              key={menu.text} >
-                
-              <NavItem active={activeIdx === idx} {...menu} />
-            </div>
-          )})}
+              <div
+                onClick={() => {
+                  // setActiveIdx(idx);
+                  setNavActive(false);
+                }}
+                key={menu.text}
+              >
+                <NavItem active={activeIdx === idx} {...menu} />
+              </div>
+            );
+          })}
         </div>
       </nav>
     </header>
-)}
+  );
+};
 
 export default Navbar;
