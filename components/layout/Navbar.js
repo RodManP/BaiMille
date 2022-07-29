@@ -19,8 +19,9 @@ const Navbar = () => {
     <header>
       <nav className={`nav`}>
         <Link href={"/"}>
-          <a onClick={() => setActiveIdx(0)}>
-            <h1 className="logo">Guest House</h1>
+          <a  className="logo" onClick={() => setActiveIdx(0)}>
+            <h2>Kashta za gosti</h2>
+            <h4>Bai Mile</h4>
           </a>
         </Link>
         <div onClick={() => setNavActive(!navActive)} className="nav__menu-bar">

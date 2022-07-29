@@ -21,11 +21,26 @@ header {
 
 nav {
   display: flex;
-  padding: 16px;
+  padding: 5px;
   justify-content: space-between;
   align-items: center;
   background-color: aqua;
 }
+
+.logo {
+  /* width: 100%; */
+  display: inline-block;
+
+}
+
+.logo h2{
+  width: 250px;
+}
+
+.logo h4 {
+  margin-left: 34px;
+}
+
 
 .nav__menu-bar {
   display: flex;
@@ -45,11 +60,11 @@ nav {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 100px;
-  width: 375px;
+  top: 75px;
+  width: 300px;
   row-gap: 24px;
-  padding: 24px 200px;
-  right: -375px;
+  padding: 24px 150px;
+  right: -300px;
   min-height: calc(100vh - 60px);
   transition: all 0.3s;
 }
@@ -70,7 +85,7 @@ nav {
   opacity: .2;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 40em) {
   .nav__menu-bar {
     display: none;
   }
@@ -81,8 +96,8 @@ nav {
     width: fit-content;
     flex-direction: row;
     column-gap: 24px;
-    justify-items: space-between;
-    margin-right: 175px;
+    justify-items:space-between;
+    margin-right: -125  px;
   }
 
 }
