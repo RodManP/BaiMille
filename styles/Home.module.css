@@ -73,6 +73,7 @@
   max-width: 800px;
 }
 
+
 .card {
   margin: 1rem;
   padding: 1.5rem;
@@ -114,3 +115,138 @@
     flex-direction: column;
   }
 } */
+
+.body {
+  /* display: flex; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* justify-content: center; */
+  height: 70vh;
+  align-items: center;
+  background:#d5d7db;
+}
+
+.container {
+  display: flex;
+}
+
+.card_section {
+  display: block;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  height: 300px;
+  margin: 20px 5px 1px 10px;
+  width: 200px;
+  box-shadow: 0 0 0 1px black;
+  overflow: hidden;
+  border-radius: 4px;
+
+}
+.card:nth-child(2), .card:nth-child(3) {
+  display: none;
+}
+
+.image {
+  transition: all 0.2s ease;
+}
+
+.intro {
+  height: 65px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  background: rgb(27, 27, 27, .5);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.title {  
+  opacity: .8;
+  font-size: 20px;
+ margin-left:25px;
+}
+
+.subtitle {
+  font-size: 10px;
+  margin-left: 20px;
+  /* visibility: hidden; */
+  opacity: 0;
+}
+
+.card:hover {
+  cursor: pointer;
+
+}
+
+.card:hover .intro {
+  height: 50px;
+  bottom: 250px;
+  background: black;
+  opacity: .4;
+}
+
+.card:hover .subtitle {
+  opacity: 1;
+  /* visibility: visible; */
+}
+
+
+.text_section {
+  display: block;
+  width: 30%;
+  /* background-color:coral; */
+}
+.name{
+  width: 30%;
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* background-color: lightgreen; */
+  margin-top: 2rem ;
+  text-align: center;
+  
+}
+.description{
+  position: absolute;
+  /* background-color: aquamarine; */
+  margin-top: 7rem;
+  padding: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+/* .centerbtn{
+  width: 100%;
+  background-color: brown;
+} */
+
+.btn{  
+  /* max-width: 30%; */
+  text-align: center;
+  color: white;
+  background-color: green;
+  margin-top: 17rem;
+  cursor: pointer;
+  margin-left: 2rem;
+  padding: 10px;
+}
+
+@media screen and (min-width: 45em) {
+  .card_section{
+    
+    display: flex;
+    width: 70%;
+  }
+  .card:nth-child(2), .card:nth-child(3) {
+    display: flex;
+  }
+  .description{
+    align-items: center;
+  }
+  .btn{
+    margin-left: 6rem;
+  }
+}

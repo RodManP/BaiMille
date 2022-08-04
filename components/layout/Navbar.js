@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import NavItem from "./NavItem";
-import Image from "next/image";
 // import styles from "../../styles/navbar.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 
