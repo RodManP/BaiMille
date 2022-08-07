@@ -99,8 +99,8 @@ nav {
     min-height: fit-content;
     width: fit-content;
     flex-direction: row;
+    justify-items: space-between;
     column-gap: 24px;
-    justify-items:space-between;
     margin-right: -125  px;
     
   }

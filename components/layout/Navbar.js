@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const MENU_LIST = [
   { text: "home", href: "/" },
-  { text: "reservations", href: "/reservations" },
+  { text: "gallery", href: "/gallery" },
   { text: "contact", href: "/contact" },
   { text: "about", href: "/about" },
 ];

@@ -17,6 +17,7 @@ export default function Home() {
                 alt="Bansko"
                 width={350}
                 height={500}
+                objectFit="cover"
               />
               <div className={styles.intro}>
                 <h1 className={styles.title}>Bansko</h1>
@@ -32,6 +33,7 @@ export default function Home() {
                 alt="Guest House"
                 width={350}
                 height={500}
+                objectFit="cover"
               />
               <div className={styles.intro}>
                 <h1 className={styles.title}>Bai Mile</h1>
@@ -45,6 +47,7 @@ export default function Home() {
                 alt="Downtown"
                 width={350}
                 height={500}
+                objectFit="cover"
               />
               <div className={styles.intro}>
                 <h1 className={styles.title}>Ivan Ivanov</h1>
