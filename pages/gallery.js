@@ -11,7 +11,7 @@ const [indice, setIndice] = useState(1)
 
 const calculaIndice = () => {
   clearInterval(myInterval);
-  if(indice === 5){
+  if(indice > 6){
     setIndice(1)
   }else{
     setIndice(indice + 1)
@@ -30,55 +30,64 @@ const myInterval = setInterval(() => {
 
   console.log('indice::',indice);
 
-  const gallery = [{
-    id: 1,
-    alt: "",
-    src: "/images/bansko2.jpg",
-    title: "ammenities",
-    description: "Every room served with own set of ammenities"
-  },
-  {
-    id: 2,
-    alt: "",
-    src: "/bansko.jpg",
-    title: "Home",
-    description: "Two beds"
-  },
-  {
-    id: 3,
-    alt: "",
-    src: "/ivan-ivanov.jpg",
-    title: "Home",
-    description: ""
-  },
-  {
-    id: 4,
-    alt: "",
-    src: "/resizedkristin.jpg",
-    title: "Home",
-    description: ""
-  },
-  {
-    id: 5,
-    alt: "",
-    src: "/bansko.jpg",
-    title: "Home",
-    description: ""
-  }, {
-    id: 6,
-    alt: "",
-    src: "/resizedkristin.jpg",
-    title: "Home",
-    description: ""
-  
-  }, {
-    id: 7,
-    alt: "",
-    src: "/images/bansko2.jpg",
-    title: "Home",
-    description: ""
-  },
-]
+  const gallery = [
+    {
+      id: 1,
+      alt: "",
+      src: "/images/two_beds2.jpg",
+      title: "room",
+      description: "comfortable wide bedrooms",
+    },
+    {
+      id: 2,
+      alt: "",
+      src: "/images/otro.jpg",
+      title: "bathroom",
+      description: "bathrooms with ammenities",
+    },
+    {
+      id: 3,
+      alt: "",
+      src: "/images/one_bed1.jpg",
+      title: "room",
+      description: "one bed",
+    },
+    {
+      id: 4,
+      alt: "",
+      src: "/images/restaurant2.jpg",
+      title: "Restaurant",
+      description: "in site restaurant",
+    },
+    {
+      id: 5,
+      alt: "",
+      src: "/images/two_level1.jpg",
+      title: "Room",
+      description: "Two level room",
+    },
+    {
+      id: 6,
+      alt: "",
+      src: "/images/sauna2.jpg",
+      title: "Sauna",
+      description: "sauna room",
+    },
+    {
+      id: 7,
+      alt: "",
+      src: "/images/barbacue2.jpg",
+      title: "Barbacue",
+      description: "barbacue spot",
+    },
+    {
+      id: 8,
+      alt: "",
+      src: "/images/two_beds2.jpg",
+      title: "room",
+      description: "two beds",
+    },
+  ];
 console.log(gallery[0].src);
 
 

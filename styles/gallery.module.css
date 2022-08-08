@@ -37,6 +37,7 @@
     margin-top: 1rem;
     margin-left: 3rem;
     animation: switch_photo 2s ease;
+    
     }
 
 
@@ -54,15 +55,17 @@
 }
 
 
-.title {
+.card > .title {
     font-size: .9rem;
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 .description {
     margin-top: .5rem;
     font-size: .7rem;
     text-align: center;
+    text-transform: capitalize;
 }
 
 /* text section */

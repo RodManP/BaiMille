@@ -1,3 +1,61 @@
 .main{
     background-color: blueviolet;
+    display: flex;
+    width: 100%;
+    
+}
+.map_section{
+    width: 60%;
+
+}
+.map {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    animation: switch_photo 2s ease;
+    
+    }
+
+.contacts_section{
+     position: relative;
+    width: 40%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+.contact {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+    text-transform: capitalize;
+    font-size: .7rem;
+}
+
+.address{    
+    text-align: left;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+.address_two{
+    margin-top: 1.5rem;
+    text-align: left;
+    font-size: 1.3rem
+}
+.web{
+    margin-top: 1.5rem;
+    text-align: left;
+    font-size: 1.3rem;
+}
+.tel{
+    margin-top: 1.5rem;
+    text-align: left;
+    font-size: 1.3rem;
+}
+.city{
+    margin-top: 1.5rem;
+    text-align: left;
+    font-size: 1.3rem;
 }

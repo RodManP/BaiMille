@@ -13,7 +13,7 @@ export default function Home() {
             <div className={styles.card}>
               <Image
                 className={styles.image}
-                src="/bansko.jpg"
+                src="/images/bansko.jpg"
                 alt="Bansko"
                 width={350}
                 height={500}
@@ -29,7 +29,7 @@ export default function Home() {
             <div className={styles.card}>
               <Image
                 className={styles.image}
-                src="/resizedkristin.jpg"
+                src="/images/guest_house.jpg"
                 alt="Guest House"
                 width={350}
                 height={500}
