@@ -27,6 +27,7 @@
     flex-direction: column;
 }
 .contact {
+    display: flex;
     width: 100%;
     text-align: center;
     margin-top: 1.5rem;
@@ -42,7 +43,12 @@
 .address_two{
     margin-top: 1.5rem;
     text-align: left;
-    font-size: 1.3rem
+    font-size: 1rem
+}
+.city{
+    margin-top: 1.5rem;
+    text-align: left;
+    font-size: 1rem  
 }
 .web{
     margin-top: 1.5rem;
@@ -54,8 +60,33 @@
     text-align: left;
     font-size: 1.3rem;
 }
-.city{
+.email{
     margin-top: 1.5rem;
     text-align: left;
     font-size: 1.3rem;
+}
+
+.icon_hotel{
+    font-size: 1.3rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+.icon_web{
+    font-size: 1rem;
+    margin-right: 2rem;
+    margin-top: 6.5rem;
+}
+.icon_tel{
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+.icon_whatsapp{
+    font-size: 1.3rem;
+    margin-left: .8rem;
+}
+.icon_email{
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    margin-top: 1.9rem;
 }

@@ -2,39 +2,21 @@ import Layout from "../components/layout/Layout";
 import styles from "../styles/gallery.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Reservations() {
-
-  
-const [indice, setIndice] = useState(1)
-
-const calculaIndice = () => {
-  clearInterval(myInterval);
-  if(indice > 6){
-    setIndice(1)
-  }else{
-    setIndice(indice + 1)
-
-  }
-  clearInterval(myInterval);
-  return 
-}
-
-const myInterval = setInterval(() => {
-   
-    calculaIndice()
-    console.log('en intervalo');
-    
-  },4000)
-
-  console.log('indice::',indice);
-
   const gallery = [
+    {
+      id: 0,
+      alt: "",
+      src: "/images/two_beds.jpg",
+      title: "room",
+      description: "two beds",
+    },
     {
       id: 1,
       alt: "",
-      src: "/images/two_beds2.jpg",
+      src: "/images/onebed1.jpg",
       title: "room",
       description: "comfortable wide bedrooms",
     },
@@ -48,7 +30,7 @@ const myInterval = setInterval(() => {
     {
       id: 3,
       alt: "",
-      src: "/images/one_bed1.jpg",
+      src: "/images/onebed2.jpg",
       title: "room",
       description: "one bed",
     },
@@ -80,17 +62,41 @@ const myInterval = setInterval(() => {
       title: "Barbacue",
       description: "barbacue spot",
     },
-    {
-      id: 8,
-      alt: "",
-      src: "/images/two_beds2.jpg",
-      title: "room",
-      description: "two beds",
-    },
   ];
-console.log(gallery[0].src);
 
+  const len = gallery.length - 1;
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [activeIndex, len]);
+
+  // const calculaIndice = () => {
+  //   clearInterval(myInterval);
+  //   if(indice > 6){
+  //     setIndice(1)
+  //   }else{
+  //     setIndice(indice + 1)
+
+  //   }
+  //   clearInterval(myInterval);
+  //   return
+  // }
+
+  // const myInterval = setInterval(() => {
+
+  //     calculaIndice()
+  //     console.log('en intervalo');
+
+  //   },4000)
+
+  //   console.log('indice::',indice);
+
+  // console.log(gallery[0].src);
 
   return (
     <Layout title="Bai Mille Gallery">
@@ -106,7 +112,7 @@ console.log(gallery[0].src);
                 <Image
                   className={styles.image}
                   priority
-                  src={gallery[indice].src}
+                  src={gallery[activeIndex].src}
                   alt="Bansko"
                   layout="responsive"
                   objectFit="cover"
@@ -114,8 +120,10 @@ console.log(gallery[0].src);
                   height={70}
                 />
               </div>
-              <div className={styles.title}>{gallery[indice].title}</div>
-              <div className={styles.description}>{gallery[indice].description}</div>
+              <div className={styles.title}>{gallery[activeIndex].title}</div>
+              <div className={styles.description}>
+                {gallery[activeIndex].description}
+              </div>
             </div>
           </div>
 
@@ -145,7 +153,7 @@ console.log(gallery[0].src);
             </div>
           </div>
         </div>
-        
+
         {/* <button>
           <Link href={"/"}>
             <a>
