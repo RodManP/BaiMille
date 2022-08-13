@@ -1,7 +1,6 @@
 import Layout from "../components/layout/Layout";
 import styles from "../styles/home.module.css";
 import Image from "next/image";
-import Link from "next/link";
 import NavItem from "../components/layout/NavItem";
 
 export default function Home() {
