@@ -1,5 +1,5 @@
 import Layout from "../components/layout/Layout";
-import styles from "../styles/home.module.css";
+import styles from "../styles/home.module.css"
 import Image from "next/image";
 import NavItem from "../components/layout/NavItem";
 
