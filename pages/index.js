@@ -43,7 +43,7 @@ export default function Home() {
             <div className={styles.card}>
               <Image
                 className={styles.image}
-                src="/ivan-ivanov3.jpg"
+                src="/images/ivan-ivanov3.jpg"
                 alt="Downtown"
                 width={350}
                 height={500}

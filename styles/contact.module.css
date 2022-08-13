@@ -1,92 +1,144 @@
-.main{
-    background-color: blueviolet;
-    display: flex;
-    width: 100%;
-    
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
 }
-.map_section{
-    width: 60%;
-
+.map_section {
+  width: 100%;
+  display: flex;
 }
 .map {
-    position: absolute;
-    text-align: center;
-    width: 50%;
-    height: 50%;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    animation: switch_photo 2s ease;
-    
-    }
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  margin-top: 25rem;
+  margin-left: 0rem;
+  padding: 1rem;
+}
 
-.contacts_section{
-     position: relative;
-    width: 40%;
-    /* background-color: aqua; */
-    display: flex;
-    flex-direction: column;
+.contact_section {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 50vh;
 }
 .contact {
-    display: flex;
-    width: 100%;
-    text-align: center;
-    margin-top: 1.5rem;
-    text-transform: capitalize;
-    font-size: .7rem;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 0.6rem;
 }
 
-.address{    
-    text-align: left;
-    margin-top: 2rem;
-    font-size: 1.3rem;
+.full_address {
+  line-height: 1.1;
+  position: relative;
 }
-.address_two{
-    margin-top: 1.5rem;
-    text-align: left;
-    font-size: 1rem
-}
-.city{
-    margin-top: 1.5rem;
-    text-align: left;
-    font-size: 1rem  
-}
-.web{
-    margin-top: 1.5rem;
-    text-align: left;
-    font-size: 1.3rem;
-}
-.tel{
-    margin-top: 1.5rem;
-    text-align: left;
-    font-size: 1.3rem;
-}
-.email{
-    margin-top: 1.5rem;
-    text-align: left;
-    font-size: 1.3rem;
+.icon_address {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2rem;
 }
 
-.icon_hotel{
-    font-size: 1.3rem;
-    margin-right: 2rem;
-    margin-top: 3rem;
+.address {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  padding: 0.5rem 3rem;
 }
-.icon_web{
-    font-size: 1rem;
-    margin-right: 2rem;
-    margin-top: 6.5rem;
+.icon_web {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 8.5rem;
 }
-.icon_tel{
-    font-size: 1.3rem;
-    margin-right: 1rem;
-    margin-top: 1rem;
+
+.web {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 1.3rem;
+  margin-top: 10rem;
 }
-.icon_whatsapp{
-    font-size: 1.3rem;
-    margin-left: .8rem;
+.icons {
+  width: 100%;
+  text-align: center;
+  position: relative;
 }
-.icon_email{
-    font-size: 1.3rem;
-    margin-right: 1rem;
-    margin-top: 1.9rem;
+.icon_tel {
+  width: 100%;
+  display: block;
+  position: absolute;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 13.5rem;
+  margin-left: -2.5rem;
+}
+.icon_whatsapp {
+  width: 100%;
+  display: block;
+  position: absolute;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 13.5rem;
+  color: green;
+}
+.icon_viber {
+  width: 100%;
+  display: block;
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 13.6rem;
+  margin-left: 2.5rem;
+  color: purple;
+}
+.tel {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 1.3rem;
+  margin-top: 15rem;
+}
+.icon_email {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 20.5rem;
+}
+
+.email {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 1.3rem;
+  margin-top: 22rem;
+}
+
+@media screen and (min-width: 700px) {
+  .map {
+    margin-top: 25rem;
+    margin-left: 15rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .map {
+    
+    margin-left: 20rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .map {
+   
+    margin-left: 30rem;
+  }
 }

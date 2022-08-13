@@ -3,13 +3,14 @@ import styles from "../styles/gallery.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import NavItem from "../components/layout/NavItem";
 
 export default function Reservations() {
   const gallery = [
     {
       id: 0,
       alt: "",
-      src: "/images/two_beds.jpg",
+      src: "/images/twoBed3.jpg",
       title: "room",
       description: "two beds",
     },
@@ -23,7 +24,7 @@ export default function Reservations() {
     {
       id: 2,
       alt: "",
-      src: "/images/otro.jpg",
+      src: "/images/bath2.jpg",
       title: "bathroom",
       description: "bathrooms with ammenities",
     },
@@ -65,38 +66,21 @@ export default function Reservations() {
   ];
 
   const len = gallery.length - 1;
+  let stylo = styles.card
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const [cambia, setCambia] = useState(styles.card);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
+      setCambia(styles.card_cambia) ;
     }, 4000);
-    return () => clearInterval(interval);
+    return () => {clearInterval(interval);
+      setCambia(styles.card);
+    };
   }, [activeIndex, len]);
 
-  // const calculaIndice = () => {
-  //   clearInterval(myInterval);
-  //   if(indice > 6){
-  //     setIndice(1)
-  //   }else{
-  //     setIndice(indice + 1)
-
-  //   }
-  //   clearInterval(myInterval);
-  //   return
-  // }
-
-  // const myInterval = setInterval(() => {
-
-  //     calculaIndice()
-  //     console.log('en intervalo');
-
-  //   },4000)
-
-  //   console.log('indice::',indice);
-
-  // console.log(gallery[0].src);
 
   return (
     <Layout title="Bai Mille Gallery">
@@ -107,7 +91,7 @@ export default function Reservations() {
         <div className={styles.container}>
           {/* Images section */}
           <div className={styles.images_section}>
-            <div className={styles.card}>
+            <div className={cambia}>
               <div className={styles.card_image}>
                 <Image
                   className={styles.image}
@@ -147,8 +131,12 @@ export default function Reservations() {
                   <li>Sauna</li>
                   <li>Can organize barbacue for groups or families</li>
                   <li>breakfast, lunch or dinner as requested by customer</li>
-                  {/* <li>item e</li> */}
                 </ul>
+              </div>
+              <div className={styles.centerbtn}>
+                <button className={styles.btn}>
+                  <NavItem text="Book Now" href="/contact" />
+                </button>
               </div>
             </div>
           </div>

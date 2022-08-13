@@ -40,6 +40,10 @@
     
     }
 
+.card_cambia{
+    opacity: 0;
+}
+
 
 .card_image{
     position: relative;
@@ -104,6 +108,16 @@
 .other_services li {
     list-style-type: circle;
 }
+.btn{  
+  text-align: center;
+  color: white;
+  background-color: green;
+  margin-top: 5rem;
+  cursor: pointer;
+  margin-left: 2rem;
+  padding: 10px;
+}
+
 @keyframes switch_photo {
     0% {opacity: 0;}
     100% {opacity: 1;}
