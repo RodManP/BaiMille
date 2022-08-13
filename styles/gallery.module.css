@@ -1,114 +1,104 @@
 .main {
-    background-color: orange;
-    margin: 0;
-    padding: 0;
-    height: 70vh;
-    width: 100%;
-    background: #d5d7db;
+  background-color: orange;
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  width: 100%;
+  background: #d5d7db;
 }
 
 .header {
-    min-width: 100%;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 1rem;
-    background-color: red;
+  min-width: 100%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 1rem;
+  background-color: red;
 }
 
 .container {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
-
 
 /* images section */
 .images_section {
-    position: relative;
-    /* background-color: aquamarine; */
-    width: 60%
+  position: relative;
+  width: 60%;
 }
 
 .card {
-    position: absolute;
-    text-align: center;
-    width: 50%;
-    height: 50%;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    animation: switch_photo 2s ease;
-    
-    }
-
-.card_cambia{
-    opacity: 0;
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  animation: switch_photo 2s ease;
 }
 
+.card_cambia {
+  opacity: 0;
+}
 
-.card_image{
-    position: relative;
-    /* width: 250px;
-    height: 250px; */
-   display: block;
-    
+.card_image {
+  position: relative;
+  display: block;
 }
 
 .image {
-    border-radius: 3px;
-   
+  border-radius: 3px;
 }
 
-
 .card > .title {
-    font-size: .9rem;
-    font-weight: bold;
-    text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 .description {
-    margin-top: .5rem;
-    font-size: .7rem;
-    text-align: center;
-    text-transform: capitalize;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 /* text section */
 .text_section {
-    position: relative;
-    width: 40%;
-    /* background-color: aqua; */
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .text_card {
-    width: 100%;
-    text-align: center;
-    margin-top: 1.5rem;
-    text-transform: capitalize;
-    font-size: .7rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+  font-size: 0.7rem;
 }
 
 .services ul {
-    text-align: left;
+  text-align: left;
 }
 
 .services li {
-    list-style-type: circle;
+  list-style-type: circle;
 }
 
 .other_services {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .other_services ul {
-    text-align: left;
+  text-align: left;
 }
 
 .other_services li {
-    list-style-type: circle;
+  list-style-type: circle;
 }
-.btn{  
+.btn {
   text-align: center;
   color: white;
   background-color: green;
@@ -119,29 +109,28 @@
 }
 
 @keyframes switch_photo {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 45em) {
+  .card {
+    margin-left: 7rem;
+  }
 
-    /* .card_image{
-        width: 350px;
-        height: 350px;
-    } */
-    .card{
-        margin-left: 7rem;
-    }
+  .title {
+    font-size: 1rem;
+  }
 
-    .title {
-        font-size: 1rem;
-    }
+  .description {
+    font-size: 0.8rem;
+  }
 
-    .description {
-        font-size: .8rem;
-    }
-
-    .text_card {
-        font-size: 1rem;
-    }
+  .text_card {
+    font-size: 1rem;
+  }
 }

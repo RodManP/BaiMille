@@ -4,10 +4,8 @@ import styles from "../styles/contact.module.css";
 import Map, { Marker, NavigationControl, ScaleControl } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { BsTelephone } from "react-icons/bs";
-import { MdOutlineHotel } from "react-icons/md";
 import { FaWhatsapp, FaViber } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
-import { MdOutlineHttp } from "react-icons/md";
 
 const MAPBOX_TOKEN = ""; // Set your mapbox token here
 

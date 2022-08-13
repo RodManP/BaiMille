@@ -1,7 +1,6 @@
 import Layout from "../components/layout/Layout";
 import styles from "../styles/gallery.module.css";
 import Image from "next/image";
-import Link from "next/link";
 import { useState, useEffect } from "react";
 import NavItem from "../components/layout/NavItem";
 
@@ -141,14 +140,6 @@ export default function Reservations() {
             </div>
           </div>
         </div>
-
-        {/* <button>
-          <Link href={"/"}>
-            <a>
-              <h2>Book</h2>
-            </a>
-          </Link>
-        </button> */}
       </main>
     </Layout>
   );

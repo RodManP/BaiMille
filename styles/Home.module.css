@@ -1,10 +1,8 @@
 
 .body {
-  /* display: flex; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* justify-content: center; */
   height: 70vh;
   align-items: center;
   background:#d5d7db;
@@ -56,7 +54,6 @@
 .subtitle {
   font-size: 10px;
   margin-left: 20px;
-  /* visibility: hidden; */
   opacity: 0;
 }
 
@@ -74,40 +71,31 @@
 
 .card:hover .subtitle {
   opacity: 1;
-  /* visibility: visible; */
 }
 
 
 .text_section {
   display: block;
   width: 30%;
-  /* background-color:coral; */
 }
 .name{
   width: 30%;
   position: absolute;
   font-size: 1.5rem;
   font-weight: bold;
-  /* background-color: lightgreen; */
   margin-top: 2rem ;
   text-align: center;
   
 }
 .description{
   position: absolute;
-  /* background-color: aquamarine; */
   margin-top: 7rem;
   padding: 1rem;
   text-align: center;
   text-transform: capitalize;
 }
-/* .centerbtn{
-  width: 100%;
-  background-color: brown;
-} */
 
 .btn{  
-  /* max-width: 30%; */
   text-align: center;
   color: white;
   background-color: green;
