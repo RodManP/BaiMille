@@ -5,9 +5,9 @@ import NavItem from "./NavItem";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const MENU_LIST = [
-  { text: "home", href: "/" },
-  { text: "gallery", href: "/gallery" },
-  { text: "contact", href: "/contact" },
+  { text: "Начало", href: "/" },
+  { text: "Галерия", href: "/gallery" },
+  { text: "За контакти", href: "/contact" },
   // { text: "about", href: "/about" },
 ];
 
@@ -19,8 +19,8 @@ const Navbar = () => {
       <nav className={`nav`}>
         <Link href={"/"}>
           <a  className="logo" onClick={() => setActiveIdx(0)}>
-            <h2>Kashta za gosti</h2>
-            <h4>Bai Mile</h4>
+            <h2>Къща за гости</h2>
+            <h4>Страковата къща</h4>
           </a>
         </Link>
         <div onClick={() => setNavActive(!navActive)} className="nav__menu-bar">

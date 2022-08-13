@@ -6,7 +6,7 @@ import NavItem from "../components/layout/NavItem";
 
 export default function Home() {
   return (
-    <Layout title="Bai Mille Guest House">
+    <Layout title="Къща за гости Страковата Къща">
       <main className={styles.body}>
         <div className={styles.container}>
           <div className={styles.card_section}>
@@ -14,15 +14,15 @@ export default function Home() {
               <Image
                 className={styles.image}
                 src="/images/bansko.jpg"
-                alt="Bansko"
+                alt="Банско"
                 width={350}
                 height={500}
                 objectFit="cover"
               />
               <div className={styles.intro}>
-                <h1 className={styles.title}>Bansko</h1>
+                <h1 className={styles.title}>Банско</h1>
                 <p className={styles.subtitle}>
-                  Bulgaria Ski Resort <br></br> Lift is 10 min away walking
+                  Български ски курорт <br></br> Лифта е на 10 минути пеша
                 </p>
               </div>
             </div>
@@ -36,8 +36,8 @@ export default function Home() {
                 objectFit="cover"
               />
               <div className={styles.intro}>
-                <h1 className={styles.title}>Bai Mile</h1>
-                <p className={styles.subtitle}>Guest House</p>
+                <h1 className={styles.title}>Страковата къща</h1>
+                <p className={styles.subtitle}>Къща за гости</p>
               </div>
             </div>
             <div className={styles.card}>
@@ -50,10 +50,10 @@ export default function Home() {
                 objectFit="cover"
               />
               <div className={styles.intro}>
-                <h1 className={styles.title}>Ivan Ivanov</h1>
+                <h1 className={styles.title}>Иван Иванов</h1>
                 <div>
                   <p className={styles.subtitle}>
-                    Downtown is 10min away walking
+                    Центъра е на 10 минути пеша
                   </p>
                 </div>
               </div>
@@ -61,13 +61,13 @@ export default function Home() {
           </div>
 
           <div className={styles.text_section}>
-            <div className={styles.name}>Guest House</div>
+            <div className={styles.name}>Къща за гости</div>
             <div className={styles.description}>
-              A comfortable Stay At An Affordable Price
+              Приятна почивка на приемлива цена
             </div>
             <div className={styles.centerbtn}>
               <button className={styles.btn}>
-                <NavItem text="Book Now" href="/contact" />
+                <NavItem text="Направи резервация" href="/contact" />
               </button>
             </div>
           </div>

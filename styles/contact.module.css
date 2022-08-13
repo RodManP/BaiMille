@@ -8,12 +8,13 @@
 .map_section {
   width: 100%;
   display: flex;
+ 
 }
 .map {
   position: absolute;
   width: 100%;
   height: 80%;
-  margin-top: 25rem;
+  margin-top: 17rem;
   margin-left: 0rem;
   padding: 1rem;
 }
@@ -23,11 +24,13 @@
   width: 100%;
   text-align: center;
   height: 50vh;
+  
 }
 .contact {
   width: 100%;
   text-transform: capitalize;
   font-size: 0.6rem;
+  
 }
 
 .full_address {
@@ -48,7 +51,7 @@
   text-align: center;
   position: absolute;
   font-size: 1.3rem;
-  margin-top: 3rem;
+  margin-top: 3.3rem;
   padding: 0.5rem 3rem;
 }
 .icon_web {
@@ -78,7 +81,7 @@
   position: absolute;
   font-size: 1.3rem;
   font-weight: bold;
-  margin-top: 13.5rem;
+  margin-top: 6.8rem;
   margin-left: -2.5rem;
 }
 .icon_whatsapp {
@@ -87,7 +90,7 @@
   position: absolute;
   font-size: 1.3rem;
   font-weight: bold;
-  margin-top: 13.5rem;
+  margin-top: 6.8rem;
   color: green;
 }
 .icon_viber {
@@ -96,7 +99,7 @@
   position: absolute;
   font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 13.6rem;
+  margin-top: 6.9rem;
   margin-left: 2.5rem;
   color: purple;
 }
@@ -105,7 +108,7 @@
   text-align: center;
   position: absolute;
   font-size: 1.3rem;
-  margin-top: 15rem;
+  margin-top: 8.5rem;
 }
 .icon_email {
   width: 100%;
@@ -113,7 +116,7 @@
   position: absolute;
   font-size: 1.6rem;
   font-weight: bold;
-  margin-top: 20.5rem;
+  margin-top: 13.1rem;
 }
 
 .email {
@@ -121,24 +124,22 @@
   text-align: center;
   position: absolute;
   font-size: 1.3rem;
-  margin-top: 22rem;
+  margin-top: 15.1rem;
 }
 
 @media screen and (min-width: 700px) {
   .map {
-    margin-top: 25rem;
+    margin-top: 17rem;
     margin-left: 15rem;
   }
 }
 @media screen and (min-width: 1000px) {
   .map {
-    
     margin-left: 20rem;
   }
 }
 @media screen and (min-width: 1100px) {
   .map {
-   
     margin-left: 30rem;
   }
 }

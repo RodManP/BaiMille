@@ -15,18 +15,18 @@ export default function Contact() {
       <main className={styles.main}>
         {/* comienza seccion info */}
         <div className={styles.contact_section}>
-          <h1>Contact</h1>
+          <h2>Контакти</h2>
           <div className={styles.contact}>
             <div className={styles.full_address}>
-              <div className={styles.icon_address}>address</div>
+              <div className={styles.icon_address}>Адрес</div>
               <div className={styles.address}>
                 ул. „Цар Иван Асен II-ри“ 20, 1124 кв. Новия град, Банско
               </div>
             </div>
-            <div>
-              <div className={styles.icon_web}>web page</div>
+            {/* <div>
+              <div className={styles.icon_web}>уебсайт</div>
               <div className={styles.web}>http://www.strakova-kashta.com/</div>
-            </div>
+            </div> */}
             <div className={styles.icons}>
               <BsTelephone className={styles.icon_tel} />
               <FaWhatsapp className={styles.icon_whatsapp} />

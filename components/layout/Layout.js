@@ -10,7 +10,7 @@ export default function Layout(props) {
       <MetaHead title={props.title} />
       <Navbar />
       <main>{props.children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </Fragment>
   );
 }
